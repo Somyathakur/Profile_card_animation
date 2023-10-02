@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>team animated</title>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <div class="imgBx active" style="--i:1;" data-id="content1">
+                <img src="./images/somya.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:2;" data-id="content2">
+                <img src="./images/sakshi.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:3;" data-id="content3">
+                <img src="./images/softy.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:4;" data-id="content4">
+                <img src="./images/suhani.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:5;" data-id="content5">
+                <img src="./images/harsh.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:6;" data-id="content6">
+                <img src="./images/utkarsh.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx active" id="content1">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/somya.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Somya Thakur<br><span>somyatcode</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx" id="content2">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/sakshi.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Sakshi Thakur<br><span>pharmacist</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx" id="content3">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/softy.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Softy Nishtha<br><span>Researcher</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx" id="content4">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/suhani.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Shreya Shree<br><span>Entrepreneur</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx" id="content5">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/harsh.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Shaury Thakur<br><span>CA</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx" id="content6">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/utkarsh.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Abhinav Singh<br><span>Surgeon</span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+
+    <script>
+        let imgBx = document.querySelectorAll('.imgBx')
+        let contentBx = document.querySelectorAll('.contentBx')
+
+        for(let i=0; i < imgBx.length; i++){
+            imgBx[i].addEventListener('mouseover', function(){
+                for(let i=0; i<contentBx.length; i++){
+                    contentBx[i].className = 'contentBx';
+                }
+                document.getElementById(this.dataset.id).className = 'contentBx active';
+
+
+                for(let i=0; i<imgBx.length; i++){
+                    imgBx[i].className = 'imgBx';
+                }
+                this.className = 'imgBx active';
+            })
+        }
+    </script>
+</body>
+</html>
